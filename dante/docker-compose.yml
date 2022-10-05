@@ -2,10 +2,6 @@ version: '3'
 services:
   dante:
     build: .
-#    image: vimagick/dante
-#    command: useradd denis
     ports:
       - "2016:2016"
-    volumes:
-      - ./sockd.conf:/etc/sockd.conf
     restart: always
